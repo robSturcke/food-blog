@@ -14,6 +14,8 @@ source 'https://rubygems.org'
    gem 'sqlite3'
  end
 
+ # Bootstrap SASS 
+ gem 'bootstrap-sass'
  # Use SCSS for stylesheets
  gem 'sass-rails', '~> 5.0'
  # Use Uglifier as compressor for JavaScript assets

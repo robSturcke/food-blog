@@ -1,0 +1,8 @@
+<h1><%= (@wiki.title) %></h1>
+<p><%= (@wiki.body) %></p>
+
+<p class="date">
+  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+</p>
+
+<p class="body"></p>
