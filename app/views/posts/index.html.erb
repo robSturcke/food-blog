@@ -8,4 +8,8 @@
     </div>
   </div>
 <% end %>
-<%= link_to "New Post", new_post_path, class: 'btn btn-success' %>
+    <% if user_signed_in? %>
+      | <%= link_to "New Post", new_post_path, class: 'btn btn-success' %> |
+  		| <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-success' %> |
+  		  <%= link_to 'Delete', post_path(@post), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %>
+	  <% end %>
