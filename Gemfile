@@ -30,3 +30,5 @@ source 'https://rubygems.org'
  gem 'bcrypt'
  #devise
  gem 'devise'
+
+ gem 'paperclip'

@@ -1,5 +1,6 @@
 <h1><%= (@post.title) %></h1>
 <p><%= (@post.body) %></p>
+<%= image_tag @post.picture.url(:medium) %>
 
 <p class="date">
   Submitted <%= time_ago_in_words(@post.created_at) %> Ago
