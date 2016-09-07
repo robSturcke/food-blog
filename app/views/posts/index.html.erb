@@ -1,16 +1,21 @@
-<h1>A Food Blog created by a Ruby on Rails Developer</h1>
-<% @posts.each do |post| %>
-  <div class="media">
-    <div class="media-body">
-      <h4 class="media-heading">
-        <%= link_to (post.title), post %>
-        <% if user_signed_in? %>
-      		| <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-success' %> |
-      		  <%= link_to 'Delete', post_path(post), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %>
-    	  <% end %>
-      </h4>
-    </div>
-  </div>
-<% end %>
-
-<%= link_to "New Post", new_post_path, class: 'btn btn-success' %>
+<div class="container-body">
+    <h1>A Food Blog created by a Ruby on Rails Developer</h1>
+    <% @posts.each do |post| %>
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="media-heading">
+            <%= link_to (post.title), post %>
+          </h4>
+            <table class="table">
+            <% if user_signed_in? %>
+          		 <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-success' %> |
+          		  <%= link_to 'Delete', post_path(post), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %>
+        	  <% end %>
+            </table>
+        </div>
+      </div>
+    <% end %>
+    <% if user_signed_in? %>
+    <%= link_to "New Post", new_post_path, class: 'btn btn-success' %>
+    <% end %>
+</div>

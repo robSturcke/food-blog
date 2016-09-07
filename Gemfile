@@ -7,6 +7,7 @@ source 'https://rubygems.org'
  group :production do
    gem 'pg'
    gem 'rails_12factor'
+   gem 'sqlite3'
  end
 
  # #2
@@ -32,3 +33,7 @@ source 'https://rubygems.org'
  gem 'devise'
 
  gem 'paperclip'
+
+ gem 'aws-sdk', '~> 2.3.0'
+
+ gem 'dotenv-rails', :groups => [:development, :test]

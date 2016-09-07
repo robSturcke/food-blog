@@ -1,7 +1,13 @@
-<h1><%= (@post.title) %></h1>
-<p><%= (@post.body) %></p>
-<%= image_tag @post.picture.url(:medium) %>
+<div class="container-body">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="title"><%= (@post.title) %></h1>
+      <p class="body"><%= (@post.body) %></p>
+      <div class="image-tagged"><%= image_tag @post.picture.url(:medium) %></div>
 
-<p class="date">
-  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-</p>
+      <p class="date">
+        Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+      </p>
+    </div>
+  </div>
+</div>

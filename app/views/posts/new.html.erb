@@ -1,22 +1,24 @@
-<h1>New Post</h1>
+<div class="container-body">
+  <h1>New Post</h1>
 
-<div class"row">
-  <div class="col-md-8">
-    <%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
-     <div class="form-group">
-       <%= f.file_field :picture %>
-     </div>
-      <div class="form-group">
-        <%= f.label :title %>
-        <%= f.text_field :title, class: 'form control', placeholder: "Enter title" %>
-      </div>
-      <div class="form-group">
-        <%= f.label :body %>
-        <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter body" %>
-      </div>
-      <div class="form-group">
-        <%= f.submit "Save", class: 'btn btn-success' %>
-      </div>
-    <% end %>
+  <div class"row">
+    <div class="col-md-8">
+      <%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
+       <div class="form-group image-button">
+         <%= f.file_field :picture %>
+       </div>
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form control', placeholder: "Enter title" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :body %>
+          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter body" %>
+        </div>
+        <div class="form-group">
+          <%= f.submit "Save", class: 'btn btn-success' %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

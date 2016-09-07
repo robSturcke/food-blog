@@ -27,7 +27,6 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @post.assign_attributes(post_params)
-    authorize @post
 
     if @post.save
       flash[:notice] = "\"#{@post.title}\" has been updated!"
@@ -40,7 +39,6 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    authorize @post
     if @post.destroy
       flash[:notice] = "\"#{@post.title}\" was deleted successfully."
       redirect_to posts_path
