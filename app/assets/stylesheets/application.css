@@ -17,7 +17,6 @@
   @import "bootstrap";
   @import "normalize";
 
-
   html, body {
   	font-family: 'Titillium Web', sans-serif;
     letter-spacing: .15rem;
@@ -31,11 +30,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
     background-color: rgba(237,237,237, .4);
     padding: 3.5rem;
     border-radius: 3px;
-    max-width: 1080px;
+    max-width: 850px;
+  }
+
+  .row {
+    padding: 2rem;
   }
 
   @media(max-width: 800px) {
@@ -49,6 +52,10 @@
     margin-bottom: 3rem;
   }
 
+  h4 {
+    font-size: 2.5rem;
+  }
+
   a {
     color: rgb(255, 6, 6);
   }
@@ -60,20 +67,31 @@
   .nav-tabs > li > a:hover {
     background: rgb(255, 6, 6);
     color: rgb(255, 255, 255);
-    border-radius: 3px;
+    border-radius: 1.5em;
   }
 
   .image-tagged {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
   }
 
-  a.btn.btn-success, a.btn.btn-danger {
+  input.btn.btn-success,
+  a.btn.btn-success,
+  a.btn.btn-danger {
     background: transparent;
     color: rgb(255, 10, 10);
     border: none;
     font-size: 1.2rem;
+  }
+
+  input.btn.btn-success:hover,
+  a.btn.btn-success:hover,
+  a.btn.btn-danger:hover {
+    background: rgb(255, 6, 6);
+    color: rgb(255, 255, 255);
+    border-radius: 1.5em;
   }
 
   input {
@@ -83,11 +101,15 @@
     font-size: 1.2rem;
   }
 
+  textarea {
+   resize: none;
+  }
+
   footer {
     width: 100%;
     bottom: 0;
     padding: 4rem;
-    margin-top: 30%;
+    margin-top: 40%;
     text-align: center;
     background-color: rgba(237,237,237, .4);
   }
