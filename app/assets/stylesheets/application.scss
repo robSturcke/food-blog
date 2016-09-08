@@ -17,7 +17,7 @@
     width: 80%;
     background-color: rgba(237,237,237, .4);
     padding: 3.5rem;
-    border-radius: 3px;
+    border-radius: 1.5em;
     max-width: 850px;
   }
 
@@ -76,13 +76,6 @@
     background: rgb(255, 6, 6);
     color: rgb(255, 255, 255);
     border-radius: 1.5em;
-  }
-
-  input {
-    background: transparent;
-    color: rgb(255, 10, 10);
-    border: none;
-    font-size: 1.2rem;
   }
 
   textarea {
