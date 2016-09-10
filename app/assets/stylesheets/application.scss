@@ -49,9 +49,9 @@
   }
 
   .nav-tabs > li > a:hover {
-    background: rgb(255, 6, 6);
-    color: rgb(255, 255, 255);
-    border-radius: 1.5em;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 6, 6);
   }
 
   .image-tagged {
@@ -79,9 +79,9 @@
   input.btn.btn-success:hover,
   a.btn.btn-success:hover,
   a.btn.btn-danger:hover {
-    background: rgb(255, 6, 6);
-    color: rgb(255, 255, 255);
-    border-radius: 1.5em;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 6, 6);
   }
 
   input[type="text"], input[type="email"], input[type="password"], input[type="title"], textarea {
