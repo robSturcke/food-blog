@@ -109,6 +109,25 @@
    resize: none;
   }
 
+  .login-field {
+    width: 65%;
+  }
+
+  @media(max-width: 800px) {
+    .login-field {
+      width: 95%;
+    }
+  }
+
+  .login-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 6, 6);
+    font-size: 2rem;
+    margin: 1rem;
+    border: 1px solid rgb(255, 6, 6);
+    border-radius: 7px;
+  }
+
   footer {
     width: 100%;
     bottom: 0;
