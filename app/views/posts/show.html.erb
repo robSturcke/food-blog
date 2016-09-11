@@ -2,7 +2,7 @@
   <div class="row">
       <h1 class="title"><%= (@post.title) %></h1>
       <div><%= image_tag @post.picture.url(:medium), class: 'image-tagged' %></div>
-      <p class="body"><%= (@post.body) %></p>
+      <p class="body"><%= markdown (@post.body) %></p>
       <p class="date">
         Submitted <%= time_ago_in_words(@post.created_at) %> Ago
       </p>

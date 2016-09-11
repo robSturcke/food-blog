@@ -35,4 +35,6 @@ source 'https://rubygems.org'
 
  gem 'aws-sdk', '~> 2.3.0'
 
+ gem 'redcarpet'
+
  gem 'dotenv-rails', :groups => [:development, :test]

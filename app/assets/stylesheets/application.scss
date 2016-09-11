@@ -3,7 +3,7 @@
 
   html, body {
   	font-family: 'Titillium Web', sans-serif;
-    letter-spacing: .15rem;
+    letter-spacing: .17rem;
   }
 
   .container > .logo {
@@ -15,10 +15,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: rgba(237,237,237, .4);
+    background-color: rgba(240,240,240, .3);
     padding: 3.5rem;
-    border-radius: 1.5em;
+    border-radius: 4px;
     max-width: 850px;
+    border: 1px solid rgba(255, 6, 6, .1);
   }
 
   .row {
@@ -49,8 +50,9 @@
   }
 
   .nav-tabs > li > a:hover {
-    background-color: transparent;
-    border-radius: 7px;
+    background-color: rgb(255, 6, 6);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 6, 6);
   }
 
@@ -87,15 +89,19 @@
   input[type="text"], input[type="email"], input[type="password"], input[type="title"], textarea {
 		width: 80%;
 		border: 1px solid rgb(30, 30, 30);
-		border-radius: .35em;
+		border-radius: 4px;
 		margin-top: 10px;
 		padding: .5em 1em;
 		line-height: 1.75;
 	}
 
+  .links_container {
+    background-color: transparent;
+  }
+
   textarea#post_body.form-control, {
     border: 1px solid rgb(30, 30, 30);
-    border-radius: .35em;
+    border-radius: 4px;
 		margin-top: 10px;
 		padding: .5em 1em;
 		line-height: 1.75;
@@ -122,10 +128,11 @@
   .login-btn {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 6, 6);
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin: 1rem;
     border: 1px solid rgb(255, 6, 6);
-    border-radius: 7px;
+    border-radius: 4px;
+    padding: .5rem;
   }
 
   footer {
